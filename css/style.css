@@ -1,0 +1,232 @@
+/* ---------------------------------------------- Start General Styling --------------------------------------------- */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+.navbar {
+  background-color: #1e202b !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ----------------------------------------------- End General Styling ---------------------------------------------- */
+.navbar_Logo a {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.navbar_Logo a::after {
+  content: 'tagline goes here';
+  font-size: 10px;
+  color: #bfc1c8;
+  font-weight: 300;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.navbar-toggler {
+  background-color: #19b5ed;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #bfc1c8 !important;
+  text-align: center;
+}
+.navbar-nav .nav-link::before {
+  content: '';
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: -15%;
+  top: 0%;
+  border-radius: 100px;
+  padding: 10px 30px;
+}
+.navbar-nav .nav-link:hover.nav-link,
+.navbar-nav .active {
+  color: #009ad8 !important;
+}
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .active::before {
+  border: 2px solid #009ad8;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------ */
+.searchBar {
+  padding-block: 3rem;
+}
+.form-control {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 25px 25px;
+  font-size: 16px;
+  color: #bfc1c8;
+  background-color: #1e1e2f;
+}
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.searchInput {
+  color: #727069;
+}
+.btn-search button {
+  padding: 1rem 1.8rem;
+  border-radius: 50px;
+  background-color: #009ad8;
+}
+.btn-search button:hover {
+  background-color: #357acb;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.card {
+  border: transparent;
+  border-radius: 50px;
+}
+.card-header {
+  color: #bfc1c8;
+  background-color: #2d303e;
+  border-radius: 50px;
+}
+.card-header h5 {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.card-body {
+  background-color: #323544;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-body .card-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #bfc1c8;
+}
+.card-body .toDayTemp {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 135px;
+  color: #fff;
+}
+.card-body .tempStatusImage {
+  width: 100px;
+}
+.card-body .tempStatus {
+  color: #009ad8;
+}
+.card-body .icons {
+  color: #bfc1c8;
+}
+/* ----------------------------------------------------- Card 2 ----------------------------------------------------- */
+.card-two .card-header {
+  color: #bfc1c8;
+  background-color: #232530;
+}
+.card-two .card-body {
+  background-color: #262936;
+}
+.card-two .card-body .temp .tomorrowTempOne {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.card-two .card-body .temp .tomorrowTempTwo {
+  color: #bfc1c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.card-two .tempStatus {
+  padding-bottom: 38px;
+}
+/* ----------------------------------------------------- Card 3 ----------------------------------------------------- */
+.card-three .card-body .temp .afterTomorrowTempOne {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.card-three .card-body .temp .afterTomorrowTempTwo {
+  color: #bfc1c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.card-three .tempStatus {
+  padding-bottom: 38px;
+}
+/* ----------------------------------------------------- Footer ----------------------------------------------------- */
+footer {
+  background-color: #262936;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e2f;
+  border-radius: 25px;
+  padding: 10px;
+}
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+  color: #bfc1c8;
+  background-color: #1e1e2f;
+}
+.email-input::placeholder {
+  color: #bfc1c8;
+}
+.submit-button {
+  background-color: #4ea8f4;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+  background-color: #357acb;
+}
+.social-links a {
+  text-decoration: none;
+}
+.social-links i {
+  width: 50px;
+  height: 50px;
+  color: #009ad8;
+  font-size: 25px;
+  background-color: #1e202b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.social-links i:hover {
+  color: #fff;
+  background-color: #19b5ed;
+}
+footer p {
+  color: #bfc1c8;
+  text-align: center;
+}
